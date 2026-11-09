@@ -1,0 +1,40 @@
+name: Validate distribution
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Validate Python, schema, versions and distribution hashes
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          root = Path('.')
+          for path in root.rglob('*.py'):
+              compile(path.read_bytes(), str(path), 'exec')
+          source = json.loads(Path('SKILL-SOURCE.json').read_text())
+          assert source['version'] == Path('VERSION').read_text().strip()
+          actual = {str(p): hashlib.sha256(p.read_bytes()).hexdigest()
+                    for p in Path('skills').rglob('*')
+                    if p.is_file() and '__pycache__' not in p.parts}
+          assert actual == source['files_sha256']
+          skill = Path('skills/industry-education-feishu-kb/SKILL.md').read_text()
+          assert 'version: "' + source['version'] + '"' in skill
+          schema = json.loads(Path('skills/industry-education-feishu-kb/assets/project-schema.json').read_text())
+          assert len(schema['sections']) == len({s['title'] for s in schema['sections']}) == 7
+          assert json.loads(Path('workspace.team.json').read_text())['project_template']['version'] == schema['version']
+          print('Distribution validation passed')
+          PY

@@ -1,0 +1,43 @@
+# null/空列表表示尚未配置，不代表有效目标或全量授权。
+# 实际内部链接及ID按团队规则保存，禁止凭据值。
+schema_version: "0.1"
+team_timezone: "Asia/Shanghai"
+rules:
+  catalog_url: null
+  confirmed_version: null
+  owner: null
+spaces:
+  general:
+    space_id: null
+    root_node: null
+    allowed_parent_nodes: []
+  restricted:
+    space_id: null
+    root_node: null
+    allowed_parent_nodes: []
+indexes:
+  general:
+    app_token: null
+    table_ids: {}
+  restricted:
+    app_token: null
+    table_ids: {}
+authorization:
+  principal: null
+  evidence_ref: null
+  allowed_actions: []
+  allowed_entities: []
+  excluded_targets: []
+connection:
+  configured_tool: null
+  credential_reference: null
+  # 仅写宿主凭据条目名/管理位置，不写凭据值。
+concurrency:
+  mode: "patch-only"
+  # 可选patch-only / verified-conditional-write / verified-single-writer。
+  verification_ref: null
+  # 后两种仅在实际验证通过且范围匹配后启用。
+local_staging:
+  general_path: null
+  restricted_path: null
+  # 按调用环境设置，不携带某人的绝对路径。

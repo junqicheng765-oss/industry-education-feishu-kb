@@ -1,0 +1,82 @@
+{
+  "package_version": "1.4",
+  "configuration_date": "2026-11-09",
+  "home_url": "https://lcngwcork9tw.feishu.cn/wiki/BOTiwjHPwiNLwpkizKucgOvOnef",
+  "entry_url": "https://lcngwcork9tw.feishu.cn/wiki/HRuKwDgTAiA0C7kbW1bcBW8KnGg",
+  "guide_url": "https://lcngwcork9tw.feishu.cn/wiki/ADWuwTTjyiaFZ8kJw6dcg8nOnsd",
+  "space_id": "7704961228858248450",
+  "connector": {
+    "type": "official_lark_cli",
+    "profile": "industry-education",
+    "identity": "user",
+    "fallback_to_bot": false,
+    "tested_cli_version": "1.0.99",
+    "application_mode": "shared_existing_app_individual_user_oauth",
+    "credentials_included": false,
+    "changes_global_defaults": false,
+    "app_id": "cli_aa6765f57bf95c1e",
+    "application_display_name": "产教融合知识库接入 CLI（以实际授权页及App ID核对）",
+    "app_secret_delivery": "管理员已选择向获准成员单独交付；成员通过终端隐藏输入，不随包分发",
+    "create_new_app_by_default": false,
+    "initial_authorization_scopes": [
+      "wiki:wiki:readonly",
+      "docs:document.content:read",
+      "docx:document:readonly"
+    ]
+  },
+  "rules": {
+    "catalog": "https://lcngwcork9tw.feishu.cn/wiki/LPBpwYfvKiAmC3k1fP7crLg9nIb",
+    "templates": "https://lcngwcork9tw.feishu.cn/wiki/MGdkw0wXVibMlukUy0wcfefAnEc",
+    "maintenance": "https://lcngwcork9tw.feishu.cn/wiki/Y4jDw5gH0iOgg7k3HiVctl9gn6b",
+    "index": "https://lcngwcork9tw.feishu.cn/wiki/LyJXwy7Nsiry1nkdDrmchNhCnGd",
+    "skill_connection": "https://lcngwcork9tw.feishu.cn/wiki/OWfiwg0mwiCYHtkWqU0czCT8n1b",
+    "ingestion": "https://lcngwcork9tw.feishu.cn/wiki/VTUqwBYJEiR8dHkUoBJccMdLnuf"
+  },
+  "product_overview_url": "https://lcngwcork9tw.feishu.cn/wiki/HFb4w79rzi21FYkBTK0cLrBcnBc",
+  "catalog_roots": {
+    "00 开始使用": "Bxx8wc6IHiy8pLk1CFwc28y0ndd",
+    "01 解决方案库": "Q9gdwYCkdiOr4zkc441c2jZinnc",
+    "02 产品与供应链库": "CLI9w6pDUiqBq7knOkgcLx90nDb",
+    "03 教研资源库": "FASKwGkvhiqVFOkpKzyccsupnJc",
+    "04 项目交付与运维库": "WCewwYjZoinS9jk6yKMcXpNOnQf",
+    "05 共同体运营资源库": "V5WTwHXspi0xVGkHEJTcp0qdnZe",
+    "06 产业研究与案例库": "AWFOwq4DwiWq90kIAwscrF9knrg",
+    "07 项目工作区": "X9lWwfxLTigqN9krQehcCxcHnRf",
+    "90 知识治理": "A2yuwGzdViQPSskcuKIcNFqUn3c",
+    "99 历史与归档": "Uwz4w4Vh8iPVp2k1Rt0ciUP9nAf"
+  },
+  "formal_base_index": null,
+  "shared_write_mode": "patch_only_until_reliable_single_writer_or_conditional_update_is_verified",
+  "allowed_actions": "由当前用户任务及实际权限决定；配置本身不授予写入、分享或审批权限",
+  "multi_format_conversion_standard": "现行入库操作规程v1.0：在线正文及文内原件；复杂格式工具与细则按任务记录覆盖及缺漏",
+  "business_skill": "skills/industry-education-feishu-kb/SKILL.md",
+  "onboarding": {
+    "one_human_action_at_a_time": true,
+    "application_setup_script": "scripts/configure_application.py",
+    "personal_oauth_per_member": true,
+    "first_member_result": "用户于2026-11-09反馈第一个同事已跑通；未独立检查其机器、账号或权限覆盖",
+    "wiki_ungrantable_resolution": "首次曾出现无法授予查看知识库；具体修复步骤未提供，保留诊断入口，不声称已确定根因"
+  },
+  "publication_status": "project_template_v1.0_and_checks",
+  "ingestion": {
+    "procedure": "skills/industry-education-feishu-kb/references/ingestion.md",
+    "placement_check_script": "skills/industry-education-feishu-kb/scripts/verify_placement.py",
+    "first_item_before_batch": true,
+    "ordinary_material_at_space_root": false,
+    "content_and_index_checks_separate": true,
+    "server_side_enforcement_deployed": false,
+    "primary_object_type": "docx",
+    "originals_embedded_in_document": true
+  },
+  "access_decision": "2026-11-09用户决定当前团队暂沿用现有内部共享范围，后续复核；不变更企业外访问",
+  "project_template": {
+    "version": "1.0",
+    "url": "https://lcngwcork9tw.feishu.cn/wiki/Q65Ww6VXRitVVIkv9UecM5OOn0f",
+    "schema": "skills/industry-education-feishu-kb/assets/project-schema.json",
+    "workflow": "skills/industry-education-feishu-kb/references/projects.md",
+    "initialize_and_check_script": "skills/industry-education-feishu-kb/scripts/project_workspace.py",
+    "required_direct_sections": 7,
+    "checks_required_before_completion": true,
+    "server_side_enforcement_deployed": false
+  }
+}

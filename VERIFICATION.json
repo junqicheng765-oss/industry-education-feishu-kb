@@ -1,0 +1,9 @@
+{
+  "package_version": "1.4",
+  "skill_version": "0.1.4",
+  "project_template_version": "1.0",
+  "python_compile": "passed",
+  "canonical_skill_snapshot": "matched",
+  "credentials_included": false,
+  "scope": "当前个人身份的现场结构检查；不证明其他成员机器、业务审批或服务器强制拦截"
+}

@@ -1,0 +1,20 @@
+{
+  "skill": "industry-education-feishu-kb",
+  "version": "0.1.4",
+  "source": "维护源版本化分发快照；成员端不分叉",
+  "files_sha256": {
+    "skills/industry-education-feishu-kb/SKILL.md": "af730f2a827ca7bdf295efe020150217d58dcf6ea66e5f5b0e2cb0eadabcf2a7",
+    "skills/industry-education-feishu-kb/references/connection.md": "86ebc636ef45902f09b6865e85dd23ddd4d1cc8b6523c3a2b720214638c1d816",
+    "skills/industry-education-feishu-kb/references/projects.md": "19fa26ef844c803e57d0a0658041372027db33189140bb1d6887da494d64819d",
+    "skills/industry-education-feishu-kb/references/catalog.md": "0d651428472640d5b37ff76f25223f1eb17625bd893211fc1c2ee7c289cc4022",
+    "skills/industry-education-feishu-kb/references/ingestion.md": "fada3afacfbf7a925d176ad8435bfd48cb7879ba69142eb9cf3f79cd3dc054f1",
+    "skills/industry-education-feishu-kb/references/document-types.md": "4ca64f6cc9cadef6d13baa2fd6b46966ed6b4ea29fdd66328c62f620feea8465",
+    "skills/industry-education-feishu-kb/references/maintenance.md": "decc064da5db9f5bfa1c54d1ec3f10511a760447d68d8aa25005118a842deead",
+    "skills/industry-education-feishu-kb/agents/openai.yaml": "0106dde2d08fe167ef96bd088d1d1da85128a1d3184e98ddea2e35af5cc7095d",
+    "skills/industry-education-feishu-kb/scripts/verify_placement.py": "0567543689f3e475a2253317d1d142603b610ed99b4a19175e182ed290ecab0c",
+    "skills/industry-education-feishu-kb/scripts/project_workspace.py": "7c059b82489144d07883bad3d776565c17be4f71e5560869ea53ae3d9496cfaf",
+    "skills/industry-education-feishu-kb/assets/project-schema.json": "c9dcdd014a8c1565ed853e2c4a728d7571c540cd2dace7a033e4e7d2a90c15a0",
+    "skills/industry-education-feishu-kb/assets/workspace.example.yaml": "e6d08084781d627c1473905cff7778dbb3dfb19000dcc9fb85d65450ac130515",
+    "skills/industry-education-feishu-kb/assets/entry-template.md": "e3fdaffc35328fee875424dcb51ec68f993b624947cf56fa1abb42092d835549"
+  }
+}

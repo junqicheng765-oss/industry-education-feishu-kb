@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "space_id": "7704961228858248450",
+  "workspace": "X9lWwfxLTigqN9krQehcCxcHnRf",
+  "entry": "HRuKwDgTAiA0C7kbW1bcBW8KnGg",
+  "template": "Q65Ww6VXRitVVIkv9UecM5OOn0f",
+  "root_fields": ["项目ID：", "项目负责人：", "当前阶段与下一里程碑：", "建设范围与排除项：", "原始依据及来源链接：", "权限与可引用范围：", "项目模板版本："],
+  "section_fields": ["项目ID：", "负责人：", "内容状态：", "适用范围：", "版本：", "来源与确认依据：", "可引用范围："],
+  "sections": [
+    {"title": "00 项目首页与当前状态", "template": "ALEew3yMwi9RugkvnikcPJMEnGf"},
+    {"title": "01 需求与原始依据", "template": "AThYwQDwEiBGSIkq5nYcfZEjnmf"},
+    {"title": "02 专属方案与范围基线", "template": "O9E0wSPtei1PT8k4te6cKGmvnYx"},
+    {"title": "03 决定与变更记录", "template": "XIOewmonLilQU0kqcp0ckJ7mnRg"},
+    {"title": "04 实施、培训与协同记录", "template": "HlGKwrzXZipA1nkfsMccKfXfn0c"},
+    {"title": "05 验收证据与遗留事项", "template": "GuWvw0NSTiR3KqksGXfcziGGnud"},
+    {"title": "06 复盘与可复用成果", "template": "QM9Pw3bttiibXjksPC2cEx2jnNg"}
+  ]
+}

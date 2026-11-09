@@ -1,0 +1,4 @@
+interface:
+  display_name: "产教融合飞书知识库维护"
+  short_description: "为团队 AI Agent 提供产教融合知识库归档、更新、版本和协作维护规则"
+  default_prompt: "使用 $industry-education-feishu-kb，按团队目录和内容归属规则整理这批材料，并在已有授权范围内维护知识库。"
