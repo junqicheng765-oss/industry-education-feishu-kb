@@ -2,11 +2,13 @@
 
 为团队内部出方案、产品资料查询、材料入库和项目协作提供统一规则。当前 **Skill v0.1.4 / 接入工具 v1.4 / 项目模板 v1.0**。
 
-这是团队的 GitHub 分发和更新入口。飞书固定 README 及其指定的现行规则仍是执行时必须读取的线上依据；本地文件不替代业务确认或访问授权。本仓库按私有仓库分发，包含团队非凭据配置；仓库访问权限与飞书知识库权限分别管理。
+这是团队的 GitHub 分发和更新入口。飞书固定 README 及其指定的现行规则仍是执行时必须读取的线上依据；本地文件不替代业务确认或访问授权。本仓库按所有者明确要求公开，可直接浏览、克隆和下载，无需先申请 GitHub 仓库访问权限。
+
+仓库包含经所有者授权公开的团队知识库入口、空间/节点ID和应用App ID等非凭据配置；实际飞书资料仍受本人OAuth、应用范围和知识库权限约束。这里没有App Secret、个人Token或业务原件。维护Skill默认建议不公开实际团队配置，本仓库的公开授权只适用于这一套非凭据配置，不推广到其他空间或敏感资料。
 
 ## 直接交给同事的 Agent
 
-同事需要先有本私有仓库的访问权限，并在本机登录自己的 GitHub。将下面这段话发给 Agent 即可：
+同事无需登录 GitHub 即可读取本仓库或使用 HTTPS 克隆。将下面这段话发给 Agent 即可：
 
 ```text
 请从 https://github.com/junqicheng765-oss/industry-education-feishu-kb 获取或更新产教融合知识库 Skill，并配置到当前项目。
@@ -20,18 +22,18 @@
 项目创建和材料整理必须读取 skills/industry-education-feishu-kb/references/projects.md，按七个栏目归位并运行结构检查。完成后报告本次Git提交、Skill版本、个人连接、项目指令及未完成项。不要输出或提交App Secret、个人Token和认证日志。
 ```
 
-Agent 无法获取私有仓库时，需要先解决本人的 GitHub 仓库访问权；反复授权飞书不能解决 GitHub 权限问题。仓库管理员通过 GitHub Settings → Collaborators 管理成员，成员自行接受邀请。
+获取公开仓库不需要管理员邀请。提交仓库修改仍需要GitHub写权限；读取或写入飞书知识库仍须分别完成本人授权及内容权限核验。
 
 ## 获取与更新
 
 首次获取（在自己选择的长期目录中运行）：
 
 ```bash
-gh repo clone junqicheng765-oss/industry-education-feishu-kb
+git clone https://github.com/junqicheng765-oss/industry-education-feishu-kb.git
 cd industry-education-feishu-kb
 ```
 
-也可以使用 `git clone https://github.com/junqicheng765-oss/industry-education-feishu-kb.git`，按自己现有的 GitHub 凭据认证方式访问。
+已有GitHub CLI的成员也可以使用 `gh repo clone junqicheng765-oss/industry-education-feishu-kb`。
 
 后续在仓库目录更新：
 
